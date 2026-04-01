@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Royal Chronograph Gold</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #eee;
+  line-height: 1.6;
+  padding: 40px;
+}
+
+/* PAGE TITLE */
+h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: #d4af37;
+  letter-spacing: 1px;
+}
+
+/* MAIN CONTAINER */
+.container {
+  display: flex;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+  align-items: center;
+  background: #161616;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* IMAGE */
+.container img {
+  width: 350px;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+}
+
+/* PRODUCT DETAILS */
+.product-info {
+  flex: 1;
+}
+
+/* PRICE */
+.price {
+  font-size: 32px;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+/* OLD PRICE */
+.old-price {
+  color: #888;
+}
+
+/* TEXT */
+p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+/* FEATURES */
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 25px;
+}
+
+button {
+  padding: 12px 25px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* ADD TO CART */
+.cart-btn {
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+}
+
+.cart-btn:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+/* BUY NOW */
+.buy-btn {
+  background: #d4af37;
+  color: #000;
+}
+
+.buy-btn:hover {
+  background: #b9962e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Royal Chronograph Gold Watch</h1>
+
+<div class="container">
+
+  <img src="/chornocraft-main/chornocraft-main/images/homme-pirate_750x.jpg" alt="Watch">
+
+  <div class="product-info">
+    
+    <div class="price">$120.00</div>
+    <p><span class="old-price"><del>$150</del></span> — You save $30</p>
+
+    <p>⭐⭐⭐⭐☆ (120 Reviews)</p>
+
+    <p>Premium luxury watch with chronograph and leather strap.</p>
+
+    <h3>Features:</h3>
+    <ul>
+      <li>Stainless Steel</li>
+      <li>Water Resistant</li>
+      <li>Leather Strap</li>
+      <li>Chronograph</li>
+    </ul>
+
+    <div class="buttons">
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

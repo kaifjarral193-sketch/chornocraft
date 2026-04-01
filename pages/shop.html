@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | ChornoCraft</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .shop-hero {
+            height: 300px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .shop-hero h1 {
+            font-size: 42px;
+            letter-spacing: 2px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .price {
+            color: #c9a86a;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #c9a86a;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="shop-hero">
+    <h1>Our Premium Collection</h1>
+</section>
+
+<!-- PRODUCTS -->
+<section class="container">
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314">
+            </div>
+            <div class="product-info">
+                <h3>Royal Gold Chronograph</h3>
+                <p class="price">$299</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3">
+            </div>
+            <div class="product-info">
+                <h3>Aviator Black Edition</h3>
+                <p class="price">$199</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1">
+            </div>
+            <div class="product-info">
+                <h3>Smart X Pro</h3>
+                <p class="price">$149</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa">
+            </div>
+            <div class="product-info">
+                <h3>Luxury Silver Classic</h3>
+                <p class="price">$249</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7">
+            </div>
+            <div class="product-info">
+                <h3>Sport Active Watch</h3>
+                <p class="price">$129</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49">
+            </div>
+            <div class="product-info">
+                <h3>Minimal Black Dial</h3>
+                <p class="price">$179</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+ <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="ChornoCraft Logo">
+                <p>Crafting excellence since 1995. The world's finest timepieces at your fingertips.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="pages/about.html">About Us</a></li>
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61577535287487"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/chorn_ocraft/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+             <!-- Contact Details -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><strong>Phone:</strong> 0317 2559071</li>
+        <li><strong>Email:</strong> Kaifjarral193@gmail.com</li>
+        <li><strong>Address:</strong> Gulraiz - Rawalpindi</li>
+      </ul>
+    </div>
+        </div>
+          
+        <div class="footer-bottom">
+            <p>&copy; 2026 ChornoCraft. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
